@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
+    <script>
+      // 全局全屏函数
+      window.toggleFullscreen = function() {
+        const doc = document.documentElement;
+        const isFull = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
+        if (!isFull) {
+          if (doc.requestFullscreen) doc.requestFullscreen();
+          else if (doc.webkitRequestFullscreen) doc.webkitRequestFullscreen();
+          else if (doc.mozRequestFullScreen) doc.mozRequestFullScreen();
+          else if (doc.msRequestFullscreen) doc.msRequestFullscreen();
+        } else {
+          if (document.exitFullscreen) document.exitFullscreen();
+          else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+          else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
+          else if (document.msExitFullscreen) document.msExitFullscreen();
+        }
+      };
+    </script>
+    <script type="module" crossorigin src="/assets/index-CporzCXd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DmB7r_dG.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
